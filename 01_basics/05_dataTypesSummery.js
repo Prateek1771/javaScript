@@ -45,3 +45,27 @@ console.log(typeof myFun);
 //       Arrays  =>  object
 //       Function  =>  function
 //       Object  =>  object
+
+//===========================================================================================
+
+//Stack (Primitive), Heap(non-primitive)
+
+//Stack memory
+let name1 = "prateek"
+let name2 = name1
+name2 = 'abcd'
+
+console.log(name1);
+console.log(name2);
+
+
+// Heap memory
+let user1 = {
+    email: 'user@gmail.com',
+    upi: 'user@ybl'
+}
+let user2 = user1
+user2.email = "abc@gmail.com"
+
+console.log(user1.email);
+console.log(user2.email);
