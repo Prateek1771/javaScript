@@ -53,11 +53,11 @@ const myn2 = myArr.splice(1, 3)  // slices the original and provides the ans
 const marvel_heros = ["thor", "Ironman", "spiderman"]
 const dc_heros = ["superman", "flash", "batman"]
 
-marvel_heros.push(dc_heros) //creates a array within a array
-
-console.log(marvel_heros);       // [ 'thor', 'Ironman', 'spiderman', [ 'superman', 'flash', 'batman' ] ]
-console.log(marvel_heros[3]);    // [ 'superman', 'flash', 'batman' ]
-console.log(marvel_heros[3][1]); // flash
+// marvel_heros.push(dc_heros) //creates a array within a array
+//
+// console.log(marvel_heros);       // [ 'thor', 'Ironman', 'spiderman', [ 'superman', 'flash', 'batman' ] ]
+// console.log(marvel_heros[3]);    // [ 'superman', 'flash', 'batman' ]
+// console.log(marvel_heros[3][1]); // flash
  
 // const allHeros = marvel_heros.concat(dc_heros)
 // console.log(allHeros);
@@ -77,8 +77,8 @@ console.log(marvel_heros[3][1]); // flash
 // console.log(Array.from("Hitesh"))
 // console.log(Array.from({name: "hitesh"})) // interesting
 // 
-// let score1 = 100
-// let score2 = 200
-// let score3 = 300
+let score1 = 100
+let score2 = 200
+let score3 = 300
 // 
-// console.log(Array.of(score1, score2, score3));
+console.log(Array.of(score1, score2, score3));
