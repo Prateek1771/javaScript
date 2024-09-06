@@ -40,6 +40,7 @@ if (true) {
 
 // console.log(username);
 
+
 // ++++++++++++++++++ interesting ++++++++++++++++++
 
 
@@ -54,4 +55,3 @@ function addone(num){
 addTwo(5)
 const addTwo = function(num){
     return num + 2
-}
