@@ -1,0 +1,12 @@
+// How does JavaScript Executes?
+
+// JavaScript Execution Context - execution takes place in 2 phases
+
+// 1) Global Ececution context
+//   -> consistes of this.
+//   -> execution context differs from browser and nodejs environment.
+//   -> single threaded
+
+// 2) Function Ececution context
+
+// EVAL Ececution context
