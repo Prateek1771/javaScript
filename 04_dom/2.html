@@ -6,10 +6,38 @@
     <title>DOM</title>
 </head>
 <body style="background-color: #212121; color: aliceblue;">
-    <ul>
+    <ul class="language">
         <li>JavaScript</li>
         <li>React JS</li>
         
     </ul>
 </body>
+<script>
+    function addLanguage(langName) {
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }   
+    addLanguage('Python')
+
+    function addOptiLanguage(langName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('C++')
+
+    // Edit
+    const secLang = document.querySelector('li:nth-child(2)')
+    const newli = document.createElement('li')  
+    newli.textContent = 'mojo'
+    secLang.replaceWith(newli)
+
+    const thiLang = document.querySelector('li:nth-child(1)')
+    thiLang.outerHTML = '<li>TypeScript</li>'
+
+    // remove
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+</script>
 </html>
