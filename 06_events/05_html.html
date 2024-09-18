@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Increment Number</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    #numberDisplay {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="numberDisplay">0</div>
+  <button id="startButton">Start</button>
+  <button id="stopButton">Stop</button>
+
+  <script>
+    let number = 0;
+    let intervalId = null;
+
+    const numberDisplay = document.getElementById('numberDisplay');
+    const startButton = document.getElementById('startButton');
+    const stopButton = document.getElementById('stopButton');
+
+    // Start incrementing the number
+    startButton.addEventListener('click', () => {
+      if (intervalId === null) {  // Avoid multiple intervals running
+        intervalId = setInterval(() => {
+          number += 1;
+          numberDisplay.textContent = number;
+        }, 1000); // Increment every second
+      }
+    });
+
+    // Stop incrementing the number
+    stopButton.addEventListener('click', () => {
+      clearInterval(intervalId);
+      intervalId = null;  // Reset intervalId so it can start again later
+    });
+  </script>
+</body>
+</html>
