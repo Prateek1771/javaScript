@@ -2,6 +2,8 @@
 
 This repository showcases the JavaScript concepts and projects I worked on while following the entire JavaScript playlist by Hitesh Sir. The playlist covers JavaScript from the basics to advanced topics. You can access the playlist at: [Chai Aur Code - Hitesh Sir's YouTube Channel](https://www.youtube.com/@chaiaurcode).
 
+Here is the Notion Docs for the reference:[JavaScript Notes](https://www.notion.so/JS-Notes-11058ffb53d280ac91edd15505239e9e?pvs=4)
+
 ## Topics Covered
 
 <details>
